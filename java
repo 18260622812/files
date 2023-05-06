@@ -1,25 +1,10 @@
 #!/bin/bash
-sleep 110m
-cd /tmp/tmp/sys
-rm nohup.out
-nohup python sys.py -h inac.txt -p 22 -m 100 -t 12 &
 
-sleep 110m
-cd /tmp/tmp/sys
-rm nohup.out
-nohup python sys.py -h inad.txt -p 22 -m 100 -t 12 &
+for i in {1..20}
+do
 
-sleep 110m
-cd /tmp/tmp/sys
-rm nohup.out
-nohup python sys.py -h inae.txt -p 22 -m 100 -t 12 &
+cd /var/tmp/.../tom
+nohup python tom.py -h "x"$i".txt" -m 500 -t 16 &
+sleep 80m
 
-sleep 110m
-cd /tmp/tmp/sys
-rm nohup.out
-nohup python sys.py -h inaf.txt -p 22 -m 100 -t 12 &
-
-sleep 110m
-cd /tmp/tmp/sys
-rm nohup.out
-nohup python sys.py -h inag.txt -p 22 -m 100 -t 12 &
+done
