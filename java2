@@ -1,0 +1,19 @@
+#!/bin/bash
+
+for i in {0..9}
+do
+
+cd /var/tmp/.../tom
+nohup python tom.py -h "x0"$i".txt" -m 500 -t 16 &
+sleep 80m
+
+done
+
+for i in {10..63}
+do
+
+cd /var/tmp/.../tom
+nohup python tom.py -h "x"$i".txt" -m 500 -t 16 &
+sleep 80m
+
+done
