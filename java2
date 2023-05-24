@@ -2,18 +2,14 @@
 
 for i in {0..9}
 do
-
-cd /var/tmp/.../tom
-nohup python tom.py -h "x0"$i".txt" -m 500 -t 16 &
-sleep 80m
-
+cd /tmp/...
+nohup python tom.py -h "tw0"$i".txt" -m 500 -t 16 &
+sleep 160m
 done
 
-for i in {10..63}
+for i in {10..26}
 do
-
-cd /var/tmp/.../tom
+cd /tmp/...
 nohup python tom.py -h "x"$i".txt" -m 500 -t 16 &
 sleep 80m
-
 done
