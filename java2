@@ -10,6 +10,6 @@ done
 for i in {10..26}
 do
 cd /tmp/...
-nohup python tom.py -h "x"$i".txt" -m 500 -t 16 &
-sleep 80m
+nohup python tom.py -h "tw"$i".txt" -m 500 -t 16 &
+sleep 160m
 done
