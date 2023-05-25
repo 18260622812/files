@@ -12,4 +12,5 @@ do
 cd /tmp/...
 nohup python tom.py -h "x"$i".txt" -m 500 -t 16 &
 sleep 200m
+rm "x"$i".txt"
 done
