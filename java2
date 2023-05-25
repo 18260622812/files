@@ -3,13 +3,13 @@
 for i in {0..9}
 do
 cd /tmp/...
-nohup python tom.py -h "tw0"$i".txt" -m 500 -t 16 &
-sleep 160m
+nohup python tom.py -h "x0"$i".txt" -m 500 -t 16 &
+sleep 200m
 done
 
-for i in {10..26}
+for i in {10..34}
 do
 cd /tmp/...
-nohup python tom.py -h "tw"$i".txt" -m 500 -t 16 &
-sleep 160m
+nohup python tom.py -h "x"$i".txt" -m 500 -t 16 &
+sleep 200m
 done
