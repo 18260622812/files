@@ -1,0 +1,28 @@
+#!/bin/bash
+while :
+do
+        if [ -f /tmp/tmp/sys/result.txt ];then
+                cp /tmp/tmp/sys/result.txt /tmp/tmp/result1.txt
+        fi
+
+        if [ -f /tmp/tmp/sys2/result.txt ];then
+                cp /tmp/tmp/sys2/result.txt /tmp/tmp/result2.txt
+        fi
+
+        if [ -f /tmp/tmp/sys3/result.txt ];then
+                cp /tmp/tmp/sys3/result.txt /tmp/tmp/result3.txt
+        fi
+
+        if [ -f /tmp/tmp/sys4/result.txt ];then
+                cp /tmp/tmp/sys4/result.txt /tmp/tmp/result4.txt
+        fi
+
+        if [ -f /tmp/tmp/sys5/result.txt ];then
+                cp /tmp/tmp/sys5/result.txt /tmp/tmp/result5.txt
+        fi
+
+        if [ -f /tmp/tmp/sys6/result.txt ];then
+                cp /tmp/tmp/sys6/result.txt /tmp/tmp/result6.txt
+        fi
+        sleep 3h
+done
