@@ -1,0 +1,20 @@
+#!/bin/bash
+
+dir="/opt/tmp"
+while :
+do
+        if [ -f $dir/sys1/result.txt ];then
+                cp $dir/sys1/result.txt $dir/result1.txt
+        fi
+
+        if [ -f $dir/sys2/result.txt ];then
+                cp $dir/sys2/result.txt $dir/result2.txt
+        fi
+
+        if [ -f $dir/sys3/result.txt ];then
+                cp $dir/sys3/result.txt $dir/result3.txt
+        fi
+
+
+        sleep 30m
+done
