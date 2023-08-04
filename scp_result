@@ -1,0 +1,37 @@
+#!/bin/bash
+
+password="hzzh@123"
+username="hzzh"
+ip="10.1.175.20"
+sip="10.1.175.194"
+spath="/opt/tmp"
+dst="/opt/tmp/result"
+
+while :
+do
+        if [ -f $spath/result1.txt ];then
+                sshpass -p "$password" scp $spath/result1.txt $username@$ip:$dst/$sip".result1.txt";
+        fi
+
+        if [ -f $spath/result2.txt ];then
+                sshpass -p "$password" scp $spath/result2.txt $username@$ip:$dst/$sip".result2.txt";
+        fi
+
+        if [ -f $spath/result3.txt ];then
+                sshpass -p "$password" scp $spath/result3.txt $username@$ip:$dst/$sip".result3.txt";
+        fi
+
+        if [ -f $spath/result4.txt ];then
+                sshpass -p "$password" scp $spath/result4.txt $username@$ip:$dst/$sip".result4.txt";
+        fi
+
+        if [ -f $spath/result5.txt ];then
+                sshpass -p "$password" scp $spath/result5.txt $username@$ip:$dst/$sip".result5.txt";
+        fi
+
+        if [ -f $spath/result6.txt ];then
+                sshpass -p "$password" scp $spath/result6.txt $username@$ip:$dst/$sip".result6.txt";
+        fi
+
+        sleep 30m
+done
