@@ -1,6 +1,6 @@
 #!/bin/bash
 
-password="hzzh@123"
+password="123456"
 username="hzzh"
 ip="10.1.175.20"
 sip="10.1.175.194"
