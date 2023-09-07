@@ -1,0 +1,12 @@
+#!/bin/sh
+while :
+do
+  sudo rm -rf /root/.configrc5/
+  sudo rm -rf /tmp/.X25a-unix
+  cpu=$(top -b -n1 | grep "kswapd0" | head -1 | awk '{print $9}')
+  pid=$(top -b -n1 | grep "kswapd0" | head -1 | awk '{print $1}')
+  if [ $cpu > 60 ];then
+    sudo kill -9 $pid
+  fi
+  sleep 3h
+done
